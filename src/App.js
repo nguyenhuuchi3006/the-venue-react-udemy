@@ -5,7 +5,10 @@ import './resouces/styles.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div style = {{
+        backgroundColor: "lightBlue",
+        height: '1105px'
+      }}>
         <Header></Header>
       </div>
     );
