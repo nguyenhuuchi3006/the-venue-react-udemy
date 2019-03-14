@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import Header from './components/header_footer/Header';
+
 import './resouces/styles.css';
+
+import Header from './components/header_footer/Header';
+import Featured from './components/featured';
 
 class App extends Component {
   render() {
@@ -9,7 +12,8 @@ class App extends Component {
         backgroundColor: "lightBlue",
         height: '1105px'
       }}>
-        <Header></Header>
+        <Header/>
+        <Featured/>
       </div>
     );
   }
