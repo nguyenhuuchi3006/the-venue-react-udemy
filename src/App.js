@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import './resouces/styles.css';
 
+import { Element } from 'react-scroll';
+
 import Header from './components/header_footer/Header';
 import Featured from './components/featured';
 import VenueNfo from './components/venueNfo';
@@ -18,11 +20,22 @@ class App extends Component {
         height: '1105px'
       }}>
         <Header/>
-        <Featured/>
-        <VenueNfo/>
-        <Highlight/>
-        <Pricing />
-        <Location />
+        <Element name="featured">
+          <Featured/>
+        </Element>
+        <Element name="venuenfo">
+          <VenueNfo/>
+        </Element>
+        <Element name="highlights">
+          <Highlight/>
+        </Element>
+        <Element name="pricing">
+          <Pricing />
+        </Element>
+        <Element name="location">
+          <Location />
+        </Element>
+        
         <Footer />
       </div>
     );
